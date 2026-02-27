@@ -1,73 +1,160 @@
-# React + TypeScript + Vite
+<p align="center">
+<img alig src="https://raw.githubusercontent.com/Grupo-02-Turma-JavaScript-12/AplicativoFitnessPersonalizado-backend/refs/heads/main/src/assets/MoveUp.png" width="300" alt="MoveUP Logo" />
+</p>
+<div align="center">  
+  
+### Gestão Inteligente de Treinos com Arquitetura Escalável
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+------------------------------------------------------------------------
 
-Currently, two official plugins are available:
+## 📌 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O **MoveUp** é uma plataforma Fullstack desenvolvida pelo **Grupo 02 --
+Turma JavaScript 12**, com o objetivo de modernizar a gestão de treinos
+para profissionais de Educação Física.
 
-## React Compiler
+A aplicação apresenta uma interface moderna e tecnológica, com foco em
+escalabilidade, organização e segurança de dados.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este repositório contém a **Landing Page institucional**, que apresenta:
 
-## Expanding the ESLint configuration
+-   A proposta do sistema
+-   A missão do projeto
+-   A arquitetura utilizada
+-   A stack tecnológica escolhida
+-   A identidade visual do produto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+------------------------------------------------------------------------
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎯 A Missão
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Transformar o caos de planilhas e anotações em **dados estruturados,
+organizados e seguros**.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### ❌ Problemas do cenário comum
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+-   Treinos perdidos em papel ou planilhas\
+-   Dificuldade em acompanhar evolução dos alunos\
+-   Falta de histórico estruturado\
+-   Falta de padronização
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### ✅ Solução proposta pelo MoveUp
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   API robusta para gestão centralizada\
+-   Histórico e versionamento de treinos\
+-   Validação e integridade de dados\
+-   Arquitetura preparada para crescimento
+
+------------------------------------------------------------------------
+
+# 🖥️ Frontend
+
+O frontend foi desenvolvido com foco em experiência do usuário,
+organização de código e identidade visual forte.
+
+## 🏠 Página Home
+
+-   Hero section com carrossel automático de banners\
+-   Destaque da proposta do sistema\
+-   Demonstração simbólica de endpoint backend\
+-   Seção comparativa (problema vs solução)\
+-   Apresentação da arquitetura\
+-   Call-to-actions estratégicos
+
+## 🧠 Página Stack Tecnológica
+
+-   Exibição dinâmica da stack via array estruturado (`TECH_STACK`)\
+-   Organização por categorias\
+-   Cards interativos com animações\
+-   Explicação do motivo da escolha de cada tecnologia
+
+------------------------------------------------------------------------
+
+## 🎨 Tecnologias Utilizadas
+
+### Frontend
+
+-   React\
+-   TypeScript\
+-   Vite\
+-   TailwindCSS\
+-   React Router DOM\
+-   Lucide React (ícones SVG)
+
+### Arquitetura Backend (Conceito do Projeto)
+
+-   NestJS\
+-   TypeORM\
+-   Banco de Dados SQL\
+-   Arquitetura modular\
+-   CRUD com validações\
+-   Controle de permissões
+
+------------------------------------------------------------------------
+
+# 🏗️ Princípios Aplicados
+
+-   Separação de responsabilidades\
+-   Componentização\
+-   Modularização\
+-   Código limpo\
+-   Escalabilidade\
+-   Design moderno e responsivo
+
+------------------------------------------------------------------------
+
+# 📂 Estrutura do Projeto
+````
+src/
+├── assets/
+├── components/
+├── data/
+│ └── techStack.ts
+├── pages/
+│ ├── Home.tsx
+│ └── TechPage.tsx
+├── routes/
+├── App.tsx
+└── main.tsx
+````
+------------------------------------------------------------------------
+
+# 🚀 Como Executar o Projeto
+
+## 1️⃣ Clonar o repositório
+
+git clone
+https://github.com/Grupo-02-Turma-JavaScript-12/Landing_Grupo-02.git
+
+## 2️⃣ Entrar na pasta do projeto
+
+cd Landing_Grupo-02
+
+## 3️⃣ Instalar as dependências
+
+npm install
+
+## 4️⃣ Rodar o ambiente de desenvolvimento
+
+npm run dev
+
+A aplicação abrirá em:
+
+http://localhost:5173
+
+------------------------------------------------------------------------
+
+# 👥 Equipe
+
+Projeto desenvolvido pelo **Grupo 02 -- Generation Brasil**\
+Turma JavaScript 12
+
+Equipe de desenvolvedores Fullstack focados em construir soluções reais
+com arquitetura moderna e boas práticas.
+
+------------------------------------------------------------------------
+
+# 📌 Versão
+
+**v1.0 -- Estrutura base da Landing Page do MoveUp**
